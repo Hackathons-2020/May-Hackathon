@@ -46,6 +46,20 @@
       <recent name="C:\Users\patsm\Documents\GitHub\May-Hackathon\src" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main" />
+      <module name="May-Hackathon" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -60,6 +74,22 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1590530994698">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1590530994698" />
+    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1590530994697">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1590530994697" />
+    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1590530994697">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1590530994697" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1590530994698">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1590530994698" />
     <state x="184" y="0" key="SettingsEditor" timestamp="1590529427082">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
