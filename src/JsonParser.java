@@ -11,7 +11,7 @@ import java.util.stream.Collectors;
 
 public class JsonParser{
     public static List<Day>  getAllDays() throws IOException, JsonException{
-        FileReader fileReader = new FileReader(("CovidTrackerData.json"));
+        FileReader fileReader = new FileReader(("CovidTrackingData.json"));
         JsonArray objects = Jsoner.deserializeMany(fileReader);
         Mapper mapper = new DozerBeanMapper();
         JsonArray o = (JsonArray) objects.get(0);
