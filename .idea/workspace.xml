@@ -90,13 +90,15 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1590530994698" />
-    <state x="184" y="0" key="SettingsEditor" timestamp="1590529427082">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="345" y="0" key="SettingsEditor" timestamp="1590532219773">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="184" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1590529427082" />
-    <state x="408" y="257" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1590529399691">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="345" y="0" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1590532219773" />
+    <state x="765" y="494" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1590531670934">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="408" y="257" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1366.728@0.0.1366.728" timestamp="1590529399691" />
+    <state x="765" y="494" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.2560.1400@0.0.2560.1400" timestamp="1590531670934" />
   </component>
 </project>
