@@ -6,9 +6,6 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
     public class main {
-        public main() {
-        }
-
         public static void main(String[] args) {
             JFrame frame = new JFrame();
             frame.setPreferredSize(new Dimension(1450, 813));
