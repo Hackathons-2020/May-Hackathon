@@ -20,15 +20,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c999c8eb-e904-47fb-bc41-deaefda96d32" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resizedMap.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resizedNorthEastern.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ResearchPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/zetcode/LineChartEx.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/statePanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CovidTrackingData.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LineChart_AWT.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ReadMe.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ResearchPanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main$3.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/May-Hackathon.iml" beforeDir="false" afterPath="$PROJECT_DIR$/May-Hackathon.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Assets/resizedMap.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Assets/resizedNorthEastern.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Data/CovidTrackerData.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JsonParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JsonParser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -133,22 +137,22 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="495" y="347" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1440.900@0.0.1440.900" timestamp="1590557590806" />
-    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1590592824592">
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1590606543980">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1590592824592" />
-    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1590592824590">
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1590606543980" />
+    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1590606543979">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1590592824590" />
-    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1590592824589">
+    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1590606543979" />
+    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1590606543978">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1590592824589" />
-    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1590592824591">
+    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1590606543978" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1590606543979">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1590592824591" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1590606543979" />
     <state x="214" y="23" width="1024" height="812" key="SettingsEditor" timestamp="1590533597630">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
