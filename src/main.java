@@ -1,15 +1,30 @@
+import com.github.cliftonlabs.json_simple.JsonException;
+
 import javax.swing.*;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-public class main{
+import java.io.IOException;
+import java.sql.SQLException;
 
+<<<<<<< HEAD
 
     public static void main(String[] args)
     {
+=======
+public class main{
+>>>>>>> f72e66d6bf373520dc759c19b0bece8c6131ae93
 
+    public static void main(String[] args) throws SQLException, IOException, JsonException {
+        CreateDatabase create = new CreateDatabase();
+        create.createNewDatabase();
+        CreateTable table = new CreateTable();
+        table.createNewTable();
+        InsertRecords insert = new InsertRecords();
+        insert.insertAllData();
+        SelectRecords select = new SelectRecords();
         JFrame frame = new JFrame();
         frame.setPreferredSize(new Dimension(1450, 813));
         JPanel panel1 = new JPanel();
@@ -336,14 +351,21 @@ public class main{
         NEgbc.gridy = 9;
         NJ.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
+<<<<<<< HEAD
+=======
+
+>>>>>>> f72e66d6bf373520dc759c19b0bece8c6131ae93
             northEast.setVisible(false);
             state.setVisible(true);
             state.changeStateLabel("New Jersey");
             }
         });
         NElabel.add(NJ, NEgbc);
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> f72e66d6bf373520dc759c19b0bece8c6131ae93
         JLabel state1 = new JLabel("");
         state1.setPreferredSize(new Dimension(50, 50));
         gbc.gridx = 0;
