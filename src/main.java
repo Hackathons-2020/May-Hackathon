@@ -1,14 +1,24 @@
+import com.github.cliftonlabs.json_simple.JsonException;
+
 import javax.swing.*;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.IOException;
+import java.sql.SQLException;
+
 public class main{
 
-    public static void main(String[] args)
-    {
-
+    public static void main(String[] args) throws SQLException, IOException, JsonException {
+        CreateDatabase create = new CreateDatabase();
+        create.createNewDatabase();
+        CreateTable table = new CreateTable();
+        table.createNewTable();
+        InsertRecords insert = new InsertRecords();
+        insert.insertAllData();
+        SelectRecords select = new SelectRecords();
         JFrame frame = new JFrame();
         frame.setPreferredSize(new Dimension(1450, 813));
         JPanel panel1 = new JPanel();
