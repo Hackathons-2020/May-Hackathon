@@ -137,13 +137,18 @@
       <recent name="C:\Users\patsm\Documents\GitHub\May-Hackathon\src" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JAR Application.sqlite-jdbc-3.31.1.jar">
     <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main" />
       <module name="May-Hackathon" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="sqlite-jdbc-3.31.1.jar" type="JarApplication">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/lib/sqlite-jdbc-3.31.1.jar" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
@@ -188,6 +193,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="495" y="347" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1440.900@0.0.1440.900" timestamp="1590557590806" />
+    <state x="892" y="344" key="#sqlite-jdbc-3.31.1.jar" timestamp="1590806485931">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="892" y="344" key="#sqlite-jdbc-3.31.1.jar/0.0.2560.1400@0.0.2560.1400" timestamp="1590806485931" />
     <state x="839" y="345" key="FileChooserDialogImpl" timestamp="1590805993968">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -212,12 +221,12 @@
     </state>
     <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1590679934593" />
     <state width="1340" height="266" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1590806234068" />
-    <state x="380" y="36" width="1024" height="812" key="SettingsEditor" timestamp="1590806231080">
+    <state x="380" y="36" width="1024" height="812" key="SettingsEditor" timestamp="1590806451411">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="184" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1590529427082" />
     <state x="214" y="23" width="1024" height="812" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1590533597630" />
-    <state x="380" y="36" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1590806231080" />
+    <state x="380" y="36" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1590806451411" />
     <state x="764" y="495" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1590806082011">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
