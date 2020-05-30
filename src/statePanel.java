@@ -91,7 +91,7 @@ public class statePanel extends JPanel{
     private JFreeChart createChart(XYDataset dataset) {
 
         JFreeChart chart = ChartFactory.createXYLineChart(
-                "Covid-19 Data from 2/1/2020 - 4/30/2020",
+                "Covid-19 Data from 2/1/2020 - 5/26/2020",
                 "Days since 2/1/2020",
                 "People",
                 dataset,
@@ -122,7 +122,7 @@ public class statePanel extends JPanel{
 
         chart.getLegend().setFrame(BlockBorder.NONE);
 
-        chart.setTitle(new TextTitle("Covid-19 Data from 2/1/2020 - 4/30/2020",
+        chart.setTitle(new TextTitle("Covid-19 Data from 2/1/2020 - 5/26/2020",
                         new Font("Serif", java.awt.Font.BOLD, 18)
                 )
         );
