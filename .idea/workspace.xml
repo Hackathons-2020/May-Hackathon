@@ -20,70 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c999c8eb-e904-47fb-bc41-deaefda96d32" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/ Data.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LineChart_AWT.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResearchPanel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/May-Hackathon/Assets/resizedMap.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/May-Hackathon/Assets/resizedNorthEastern.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/May-Hackathon/Data/CovidTrackerData.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/May-Hackathon/JsonParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/May-Hackathon/JsonParser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/May-Hackathon/main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/May-Hackathon/main$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/May-Hackathon/main$10.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/May-Hackathon/main$10.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/May-Hackathon/main$11.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/May-Hackathon/main$11.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/May-Hackathon/main$12.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/May-Hackathon/main$12.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/May-Hackathon/main$13.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/May-Hackathon/main$13.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/May-Hackathon/main$14.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/May-Hackathon/main$14.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/May-Hackathon/main$15.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/May-Hackathon/main$15.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/May-Hackathon/main$16.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/May-Hackathon/main$16.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/May-Hackathon/main$17.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/May-Hackathon/main$17.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/May-Hackathon/main$18.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/May-Hackathon/main$18.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/May-Hackathon/main$19.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/May-Hackathon/main$19.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/May-Hackathon/main$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/May-Hackathon/main$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/May-Hackathon/main$20.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/May-Hackathon/main$20.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/May-Hackathon/main$21.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/May-Hackathon/main$21.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/May-Hackathon/main$22.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/May-Hackathon/main$22.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/May-Hackathon/main$23.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/May-Hackathon/main$23.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/May-Hackathon/main$24.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/May-Hackathon/main$24.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/May-Hackathon/main$25.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/May-Hackathon/main$25.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/May-Hackathon/main$26.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/May-Hackathon/main$26.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/May-Hackathon/main$27.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/May-Hackathon/main$27.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/May-Hackathon/main$28.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/May-Hackathon/main$28.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/May-Hackathon/main$29.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/May-Hackathon/main$29.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/May-Hackathon/main$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/May-Hackathon/main$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/May-Hackathon/main$30.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/May-Hackathon/main$30.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/May-Hackathon/main$31.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/May-Hackathon/main$31.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/May-Hackathon/main$32.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/May-Hackathon/main$32.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/May-Hackathon/main$33.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/May-Hackathon/main$33.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/May-Hackathon/main$34.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/May-Hackathon/main$34.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/May-Hackathon/main$35.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/May-Hackathon/main$35.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/May-Hackathon/main$36.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/May-Hackathon/main$36.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/May-Hackathon/main$37.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/May-Hackathon/main$37.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/May-Hackathon/main$38.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/May-Hackathon/main$38.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/May-Hackathon/main$39.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/May-Hackathon/main$39.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/May-Hackathon/main$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/May-Hackathon/main$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/May-Hackathon/main$40.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/May-Hackathon/main$40.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/May-Hackathon/main$41.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/May-Hackathon/main$41.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/May-Hackathon/main$42.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/May-Hackathon/main$42.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/May-Hackathon/main$43.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/May-Hackathon/main$43.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/May-Hackathon/main$44.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/May-Hackathon/main$44.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/May-Hackathon/main$45.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/May-Hackathon/main$45.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/May-Hackathon/main$46.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/May-Hackathon/main$46.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/May-Hackathon/main$47.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/May-Hackathon/main$47.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/May-Hackathon/main$48.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/May-Hackathon/main$48.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/May-Hackathon/main$49.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/May-Hackathon/main$49.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/May-Hackathon/main$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/May-Hackathon/main$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/May-Hackathon/main$50.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/May-Hackathon/main$50.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/May-Hackathon/main$51.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/May-Hackathon/main$51.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/May-Hackathon/main$52.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/May-Hackathon/main$52.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/May-Hackathon/main$53.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/May-Hackathon/main$53.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/May-Hackathon/main$54.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/May-Hackathon/main$54.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/May-Hackathon/main$55.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/May-Hackathon/main$55.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/May-Hackathon/main$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/May-Hackathon/main$6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/May-Hackathon/main$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/May-Hackathon/main$7.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/May-Hackathon/main$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/May-Hackathon/main$8.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/May-Hackathon/main$9.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/May-Hackathon/main$9.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/May-Hackathon/main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/May-Hackathon/main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/May-Hackathon.iml" beforeDir="false" afterPath="$PROJECT_DIR$/May-Hackathon.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/statePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/statePanel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +69,7 @@
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.ChangelistConflict" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -187,31 +128,42 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="495" y="347" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1440.900@0.0.1440.900" timestamp="1590557590806" />
-    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1590679934594">
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1590800200861">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1590679934594" />
-    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1590679934591">
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1590800200861" />
+    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1590800200858">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1590679934591" />
-    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1590679934589">
+    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1590800200858" />
+    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1590800200857">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1590679934589" />
-    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1590679934593">
+    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1590800200857" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1590800200860">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1590679934593" />
-    <state x="214" y="23" width="1024" height="812" key="SettingsEditor" timestamp="1590533597630">
+    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1590800200860" />
+    <state x="214" y="23" width="1024" height="810" key="SettingsEditor" timestamp="1590786501835">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="184" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1590529427082" />
-    <state x="214" y="23" width="1024" height="812" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1590533597630" />
-    <state x="430" y="318" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1590533592477">
+    <state x="214" y="23" width="1024" height="810" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1590786501835" />
+    <state x="430" y="318" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1590786409199">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="408" y="257" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1366.728@0.0.1366.728" timestamp="1590529399691" />
-    <state x="430" y="318" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1440.900@0.0.1440.900" timestamp="1590533592477" />
+    <state x="430" y="318" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1440.900@0.0.1440.900" timestamp="1590786409199" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/statePanel.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

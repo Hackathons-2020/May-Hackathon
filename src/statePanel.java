@@ -17,6 +17,9 @@ public class statePanel extends JPanel{
     private JLabel cases;
     private JLabel stateName;
     private JLabel date;
+    private String stateAb;
+    private XYSeries series;
+    private XYSeries deathSeries;
     public statePanel(){
         this.setPreferredSize(new Dimension(1050, 694));
         this.setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));
@@ -26,7 +29,8 @@ public class statePanel extends JPanel{
         JPanel infoPanel = new JPanel();
         infoPanel.setLayout(new BoxLayout(infoPanel, BoxLayout.Y_AXIS));
         infoPanel.setPreferredSize(new Dimension(680, 500));
-         deaths = new JLabel("Dead: 0");
+        stateAb = "";
+         deaths = new JLabel("Deaths: 0");
          cases = new JLabel("Cases: 0");
          stateName = new JLabel("State");
          date = new JLabel("Data for: Feburary 1 2020");
@@ -74,17 +78,12 @@ public class statePanel extends JPanel{
     private XYDataset createDataset() {
 
         // var series = new XYSeries("2016");
-        XYSeries series = new XYSeries("2016");
-        series.add(18, 567);
-        series.add(20, 612);
-        series.add(25, 800);
-        series.add(30, 980);
-        series.add(40, 1410);
-        series.add(80, 250);
-
+        series = new XYSeries("Positive Case Toll");
+        deathSeries = new XYSeries("Death Toll");
         //var dataset = new XYSeriesCollection();
         XYSeriesCollection dataset = new XYSeriesCollection();
         dataset.addSeries(series);
+        dataset.addSeries(deathSeries);
 
         return dataset;
     }
@@ -92,9 +91,9 @@ public class statePanel extends JPanel{
     private JFreeChart createChart(XYDataset dataset) {
 
         JFreeChart chart = ChartFactory.createXYLineChart(
-                "Average salary per age",
-                "Age",
-                "Salary (€)",
+                "Covid-19 Data from 2/1/2020 - 4/30/2020",
+                "Days since 2/1/2020",
+                "People",
                 dataset,
                 PlotOrientation.VERTICAL,
                 true,
@@ -109,6 +108,9 @@ public class statePanel extends JPanel{
         renderer.setSeriesPaint(0, Color.RED);
         renderer.setSeriesStroke(0, new BasicStroke(2.0f));
 
+        renderer.setSeriesPaint(1, Color.BLUE);
+        renderer.setSeriesStroke(1, new BasicStroke(2.0f));
+
         plot.setRenderer(renderer);
         plot.setBackgroundPaint(Color.white);
 
@@ -120,12 +122,24 @@ public class statePanel extends JPanel{
 
         chart.getLegend().setFrame(BlockBorder.NONE);
 
-        chart.setTitle(new TextTitle("Average Salary per Age",
+        chart.setTitle(new TextTitle("Covid-19 Data from 2/1/2020 - 4/30/2020",
                         new Font("Serif", java.awt.Font.BOLD, 18)
                 )
         );
 
         return chart;
     }
+    public void setStateAb(String a){ stateAb = a;}
+
+    public String getStateAb(){return stateAb;}
+
+    public void addtoCaseSeries(double a, double b){series.add(a, b);}
+
+    public void clearCaseSeries(){series.clear();}
+
+    public void addtoDeathSeries(double a, double b){deathSeries.add(a, b);}
+
+    public void clearDeathSeries(){deathSeries.clear();}
+
 
 }
