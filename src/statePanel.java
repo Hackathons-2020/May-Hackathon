@@ -61,7 +61,7 @@ public class statePanel extends JPanel{
     }
     public void changeDeathLabel(String temp)
     {
-      deaths.setText(""+temp);
+        deaths.setText(""+temp);
     }
 
     public void changeStateLabel(String temp)
