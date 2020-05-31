@@ -90,6 +90,7 @@ public class main {
         panel2.setPreferredSize(new Dimension(300, 694));
         JSlider slider = new JSlider(0, 115, 0);
         JLabel day = new JLabel("Feburary 1 2020");
+        Font labelFont = new Font(day.getName(), Font.PLAIN, 10);
       /*
       ImageIcon icon = new ImageIcon("USMap.jpg");
       try{
@@ -278,6 +279,7 @@ public class main {
         PA.setPreferredSize(new Dimension(50, 50));
         NEgbc.gridx = 1;
         NEgbc.gridy = 9;
+        PA.setFont(labelFont);
         PA.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 northEast.setVisible(false);
