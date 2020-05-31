@@ -13,14 +13,15 @@ import java.util.Collections;
 import java.util.TreeMap;
 
 
-public class main{
+public class main {
     private static int bigDate;
     private static ArrayList<String> stateArray;
     private static SelectRecords select;
     private static TreeMap<Integer, ArrayList<String>> map;
     private static int sum;
+
     public static void main(String[] args) throws SQLException, IOException, JsonException {
-       bigDate = 20200201;
+        bigDate = 20200201;
         stateArray = new ArrayList<String>();
         Collections.addAll(stateArray, "AK - Alaska",
                 "AL - Alabama",
@@ -74,9 +75,6 @@ public class main{
                 "WY - Wyoming");
 
 
-
-
-
         CreateDatabase create = new CreateDatabase();
         create.createNewDatabase();
         CreateTable table = new CreateTable();
@@ -122,13 +120,12 @@ public class main{
         GridBagConstraints gbcRank = new GridBagConstraints();
         int[] array = getCasesArray(20200201);
         sort(array, 0, array.length - 1);
-        for(int i = 1; i < 51; i++) {
-            if(i < 26) {
+        for (int i = 1; i < 51; i++) {
+            if (i < 26) {
                 gbcRank.gridy = i - 1;
                 gbcRank.gridx = 0;
                 rank.add(new JLabel(i + ": " + map.get(array[array.length - i]).remove(0) + "(" + array[array.length - i] + ")"), gbcRank);
-            }
-            else {
+            } else {
                 gbcRank.gridy = i - 26;
                 gbcRank.gridx = 2;
                 gbcRank.insets = new Insets(0, 50, 0, 0);
@@ -137,9 +134,7 @@ public class main{
         }
         gbcRank.gridy = 25;
         gbcRank.gridx = 1;
-        rank.add(new JLabel("Total Positive Cases: " + sum), gbcRank);
-
-
+        rank.add(new JLabel("Total US States Positive Cases: " + sum), gbcRank);
 
 
         JButton BACK = new JButton("BACK");
@@ -167,112 +162,112 @@ public class main{
         NEgbc.gridy = 2;
         NElabel.add(null2, NEgbc);
 
-        JLabel null3= new JLabel("");
+        JLabel null3 = new JLabel("");
         null3.setPreferredSize(new Dimension(50, 50));
         NEgbc.gridx = 0;
         NEgbc.gridy = 3;
         NElabel.add(null3, NEgbc);
 
-        JLabel null4= new JLabel("");
+        JLabel null4 = new JLabel("");
         null4.setPreferredSize(new Dimension(50, 50));
         NEgbc.gridx = 0;
         NEgbc.gridy = 4;
         NElabel.add(null4, NEgbc);
 
-        JLabel null5= new JLabel("");
+        JLabel null5 = new JLabel("");
         null5.setPreferredSize(new Dimension(50, 50));
         NEgbc.gridx = 0;
         NEgbc.gridy = 5;
         NElabel.add(null5, NEgbc);
 
-        JLabel null6= new JLabel("");
+        JLabel null6 = new JLabel("");
         null6.setPreferredSize(new Dimension(50, 50));
         NEgbc.gridx = 0;
         NEgbc.gridy = 6;
         NElabel.add(null6, NEgbc);
 
-        JLabel null7= new JLabel("");
+        JLabel null7 = new JLabel("");
         null7.setPreferredSize(new Dimension(50, 50));
         NEgbc.gridx = 0;
         NEgbc.gridy = 7;
         NElabel.add(null7, NEgbc);
 
-        JLabel null8= new JLabel("");
+        JLabel null8 = new JLabel("");
         null8.setPreferredSize(new Dimension(50, 50));
         NEgbc.gridx = 0;
         NEgbc.gridy = 8;
         NElabel.add(null8, NEgbc);
 
-        JLabel null9= new JLabel("");
+        JLabel null9 = new JLabel("");
         null9.setPreferredSize(new Dimension(50, 50));
         NEgbc.gridx = 0;
         NEgbc.gridy = 9;
         NElabel.add(null9, NEgbc);
 
-        JLabel null10= new JLabel("");
+        JLabel null10 = new JLabel("");
         null10.setPreferredSize(new Dimension(50, 50));
         NEgbc.gridx = 0;
         NEgbc.gridy = 10;
         NElabel.add(null10, NEgbc);
 
-        JLabel null11= new JLabel("");
+        JLabel null11 = new JLabel("");
         null11.setPreferredSize(new Dimension(50, 50));
         NEgbc.gridx = 0;
         NEgbc.gridy = 11;
         NElabel.add(null11, NEgbc);
 
-        JLabel null12= new JLabel("");
+        JLabel null12 = new JLabel("");
         null12.setPreferredSize(new Dimension(50, 50));
         NEgbc.gridx = 0;
         NEgbc.gridy = 12;
         NElabel.add(null12, NEgbc);
 
 
-        JLabel null13= new JLabel("");
+        JLabel null13 = new JLabel("");
         null13.setPreferredSize(new Dimension(50, 50));
         NEgbc.gridx = 1;
         NEgbc.gridy = 0;
         NElabel.add(null13, NEgbc);
 
 
-        JLabel null14= new JLabel("");
+        JLabel null14 = new JLabel("");
         null14.setPreferredSize(new Dimension(50, 50));
         NEgbc.gridx = 2;
         NEgbc.gridy = 0;
         NElabel.add(null14, NEgbc);
 
-        JLabel null15= new JLabel("");
+        JLabel null15 = new JLabel("");
         null15.setPreferredSize(new Dimension(50, 50));
         NEgbc.gridx = 3;
         NEgbc.gridy = 0;
         NElabel.add(null15, NEgbc);
 
-        JLabel null16= new JLabel("");
+        JLabel null16 = new JLabel("");
         null16.setPreferredSize(new Dimension(50, 50));
         NEgbc.gridx = 4;
         NEgbc.gridy = 0;
         NElabel.add(null16, NEgbc);
 
-        JLabel null17= new JLabel("");
+        JLabel null17 = new JLabel("");
         null17.setPreferredSize(new Dimension(50, 50));
         NEgbc.gridx = 5;
         NEgbc.gridy = 0;
         NElabel.add(null17, NEgbc);
 
 
-        JLabel null18= new JLabel("");
+        JLabel null18 = new JLabel("");
         null18.setPreferredSize(new Dimension(50, 50));
         NEgbc.gridx = 6;
         NEgbc.gridy = 0;
         NElabel.add(null18, NEgbc);
 
-        JLabel null19= new JLabel("");
+        JLabel null19 = new JLabel("");
         null19.setPreferredSize(new Dimension(50, 50));
         NEgbc.gridx = 7;
         NEgbc.gridy = 0;
         NElabel.add(null19, NEgbc);
 
-        JLabel null20= new JLabel("");
+        JLabel null20 = new JLabel("");
         null20.setPreferredSize(new Dimension(50, 50));
         NEgbc.gridx = 8;
         NEgbc.gridy = 0;
@@ -293,24 +288,23 @@ public class main{
                 state.setStateAb("PA");
                 state.clearCaseSeries();
                 state.clearDeathSeries();
-                for(int i = 1; i <= 115; i++) {
+                for (int i = 1; i <= 115; i++) {
                     if (i <= 28) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 200 + i + 1, "PA"));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 200 + i + 1, "PA"));
-                    }
-                    else if (i <= 59) {
+                    } else if (i <= 59) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 300 + i - 28, "PA"));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 300 + i - 28, "PA"));
-                    }
-                    else if(i <= 89){
+                    } else if (i <= 89) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 400 + i - 59, state.getStateAb()));
-                        state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 400 + i -59, state.getStateAb()));
-                    }
-                    else {
+                        state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 400 + i - 59, state.getStateAb()));
+                    } else {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 500 + i - 89, state.getStateAb()));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 500 + i - 89, state.getStateAb()));
                     }
                 }
+
+
             }
         });
         NElabel.add(PA, NEgbc);
@@ -331,20 +325,17 @@ public class main{
                 state.setStateAb("MD");
                 state.clearCaseSeries();
                 state.clearDeathSeries();
-                for(int i = 1; i <= 115; i++) {
+                for (int i = 1; i <= 115; i++) {
                     if (i <= 28) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 200 + i + 1, "MD"));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 200 + i + 1, "MD"));
-                    }
-                    else if (i <= 59) {
+                    } else if (i <= 59) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 300 + i - 28, "MD"));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 300 + i - 28, "MD"));
-                    }
-                    else if(i <= 89){
+                    } else if (i <= 89) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 400 + i - 59, state.getStateAb()));
-                        state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 400 + i -59, state.getStateAb()));
-                    }
-                    else {
+                        state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 400 + i - 59, state.getStateAb()));
+                    } else {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 500 + i - 89, state.getStateAb()));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 500 + i - 89, state.getStateAb()));
                     }
@@ -368,20 +359,17 @@ public class main{
                 state.setStateAb("DE");
                 state.clearCaseSeries();
                 state.clearDeathSeries();
-                for(int i = 1; i <= 115; i++) {
+                for (int i = 1; i <= 115; i++) {
                     if (i <= 28) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 200 + i + 1, "DE"));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 200 + i + 1, "DE"));
-                    }
-                    else if (i <= 59) {
+                    } else if (i <= 59) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 300 + i - 28, "DE"));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 300 + i - 28, "DE"));
-                    }
-                    else if(i <= 89){
+                    } else if (i <= 89) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 400 + i - 59, state.getStateAb()));
-                        state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 400 + i -59, state.getStateAb()));
-                    }
-                    else {
+                        state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 400 + i - 59, state.getStateAb()));
+                    } else {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 500 + i - 89, state.getStateAb()));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 500 + i - 89, state.getStateAb()));
                     }
@@ -389,7 +377,6 @@ public class main{
             }
         });
         NElabel.add(DE, NEgbc);
-
 
 
         JButton NY = new JButton("NY");
@@ -406,20 +393,17 @@ public class main{
                 state.setStateAb("NY");
                 state.clearCaseSeries();
                 state.clearDeathSeries();
-                for(int i = 1; i <= 115; i++) {
+                for (int i = 1; i <= 115; i++) {
                     if (i <= 28) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 200 + i + 1, "NY"));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 200 + i + 1, "NY"));
-                    }
-                    else if (i <= 59) {
+                    } else if (i <= 59) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 300 + i - 28, "NY"));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 300 + i - 28, "NY"));
-                    }
-                    else if(i <= 89){
+                    } else if (i <= 89) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 400 + i - 59, state.getStateAb()));
-                        state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 400 + i -59, state.getStateAb()));
-                    }
-                    else {
+                        state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 400 + i - 59, state.getStateAb()));
+                    } else {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 500 + i - 89, state.getStateAb()));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 500 + i - 89, state.getStateAb()));
                     }
@@ -427,7 +411,6 @@ public class main{
             }
         });
         NElabel.add(NY, NEgbc);
-
 
 
         JButton ME = new JButton("ME");
@@ -444,20 +427,17 @@ public class main{
                 state.setStateAb("ME");
                 state.clearCaseSeries();
                 state.clearDeathSeries();
-                for(int i = 1; i <= 115; i++) {
+                for (int i = 1; i <= 115; i++) {
                     if (i <= 28) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 200 + i + 1, "ME"));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 200 + i + 1, "ME"));
-                    }
-                    else if (i <= 59) {
+                    } else if (i <= 59) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 300 + i - 28, "ME"));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 300 + i - 28, "ME"));
-                    }
-                    else if(i <= 89){
+                    } else if (i <= 89) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 400 + i - 59, state.getStateAb()));
-                        state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 400 + i -59, state.getStateAb()));
-                    }
-                    else {
+                        state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 400 + i - 59, state.getStateAb()));
+                    } else {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 500 + i - 89, state.getStateAb()));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 500 + i - 89, state.getStateAb()));
                     }
@@ -481,20 +461,17 @@ public class main{
                 state.setStateAb("VT");
                 state.clearCaseSeries();
                 state.clearDeathSeries();
-                for(int i = 1; i <= 115; i++) {
+                for (int i = 1; i <= 115; i++) {
                     if (i <= 28) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 200 + i + 1, "VT"));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 200 + i + 1, "VT"));
-                    }
-                    else if (i <= 59) {
+                    } else if (i <= 59) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 300 + i - 28, "VT"));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 300 + i - 28, "VT"));
-                    }
-                    else if(i <= 89){
+                    } else if (i <= 89) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 400 + i - 59, state.getStateAb()));
-                        state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 400 + i -59, state.getStateAb()));
-                    }
-                    else {
+                        state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 400 + i - 59, state.getStateAb()));
+                    } else {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 500 + i - 89, state.getStateAb()));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 500 + i - 89, state.getStateAb()));
                     }
@@ -518,20 +495,17 @@ public class main{
                 state.setStateAb("NH");
                 state.clearCaseSeries();
                 state.clearDeathSeries();
-                for(int i = 1; i <= 115; i++) {
+                for (int i = 1; i <= 115; i++) {
                     if (i <= 28) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 200 + i + 1, "NH"));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 200 + i + 1, "NH"));
-                    }
-                    else if (i <= 59) {
+                    } else if (i <= 59) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 300 + i - 28, "NH"));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 300 + i - 28, "NH"));
-                    }
-                    else if(i <= 89){
+                    } else if (i <= 89) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 400 + i - 59, state.getStateAb()));
-                        state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 400 + i -59, state.getStateAb()));
-                    }
-                    else {
+                        state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 400 + i - 59, state.getStateAb()));
+                    } else {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 500 + i - 89, state.getStateAb()));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 500 + i - 89, state.getStateAb()));
                     }
@@ -555,20 +529,17 @@ public class main{
                 state.setStateAb("MA");
                 state.clearCaseSeries();
                 state.clearDeathSeries();
-                for(int i = 1; i <= 115; i++) {
+                for (int i = 1; i <= 115; i++) {
                     if (i <= 28) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 200 + i + 1, "MA"));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 200 + i + 1, "MA"));
-                    }
-                    else if (i <= 59) {
+                    } else if (i <= 59) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 300 + i - 28, "MA"));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 300 + i - 28, "MA"));
-                    }
-                    else if(i <= 89){
+                    } else if (i <= 89) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 400 + i - 59, state.getStateAb()));
-                        state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 400 + i -59, state.getStateAb()));
-                    }
-                    else {
+                        state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 400 + i - 59, state.getStateAb()));
+                    } else {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 500 + i - 89, state.getStateAb()));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 500 + i - 89, state.getStateAb()));
                     }
@@ -592,20 +563,17 @@ public class main{
                 state.setStateAb("CT");
                 state.clearCaseSeries();
                 state.clearDeathSeries();
-                for(int i = 1; i <= 115; i++) {
+                for (int i = 1; i <= 115; i++) {
                     if (i <= 28) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 200 + i + 1, "CT"));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 200 + i + 1, "CT"));
-                    }
-                    else if (i <= 59) {
+                    } else if (i <= 59) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 300 + i - 28, "CT"));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 300 + i - 28, "CT"));
-                    }
-                    else if(i <= 89){
+                    } else if (i <= 89) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 400 + i - 59, state.getStateAb()));
-                        state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 400 + i -59, state.getStateAb()));
-                    }
-                    else {
+                        state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 400 + i - 59, state.getStateAb()));
+                    } else {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 500 + i - 89, state.getStateAb()));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 500 + i - 89, state.getStateAb()));
                     }
@@ -629,20 +597,17 @@ public class main{
                 state.setStateAb("RI");
                 state.clearCaseSeries();
                 state.clearDeathSeries();
-                for(int i = 1; i <= 115; i++) {
+                for (int i = 1; i <= 115; i++) {
                     if (i <= 28) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 200 + i + 1, "RI"));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 200 + i + 1, "RI"));
-                    }
-                    else if (i <= 59) {
+                    } else if (i <= 59) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 300 + i - 28, "RI"));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 300 + i - 28, "RI"));
-                    }
-                    else if(i <= 89){
+                    } else if (i <= 89) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 400 + i - 59, state.getStateAb()));
-                        state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 400 + i -59, state.getStateAb()));
-                    }
-                    else {
+                        state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 400 + i - 59, state.getStateAb()));
+                    } else {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 500 + i - 89, state.getStateAb()));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 500 + i - 89, state.getStateAb()));
                     }
@@ -658,28 +623,25 @@ public class main{
         NEgbc.gridy = 9;
         NJ.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-            northEast.setVisible(false);
-            state.setVisible(true);
-            state.changeStateLabel("New Jersey");
+                northEast.setVisible(false);
+                state.setVisible(true);
+                state.changeStateLabel("New Jersey");
                 state.changeDeathLabel("Deaths: " + select.selectDeath(bigDate, "NJ"));
                 state.changeCasesLabel("Cases: " + select.selectPositive(bigDate, "NJ"));
                 state.setStateAb("NJ");
                 state.clearCaseSeries();
                 state.clearDeathSeries();
-                for(int i = 1; i <= 115; i++) {
+                for (int i = 1; i <= 115; i++) {
                     if (i <= 28) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 200 + i + 1, "NJ"));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 200 + i + 1, "NJ"));
-                    }
-                    else if (i <= 59) {
+                    } else if (i <= 59) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 300 + i - 28, "NJ"));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 300 + i - 28, "NJ"));
-                    }
-                    else if(i <= 89){
+                    } else if (i <= 89) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 400 + i - 59, state.getStateAb()));
-                        state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 400 + i -59, state.getStateAb()));
-                    }
-                    else {
+                        state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 400 + i - 59, state.getStateAb()));
+                    } else {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 500 + i - 89, state.getStateAb()));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 500 + i - 89, state.getStateAb()));
                     }
@@ -850,7 +812,6 @@ public class main{
         label.add(state32, gbc);
 
 
-
         JButton ND = new JButton("ND");
         ND.setPreferredSize(new Dimension(30, 30));
         gbc.gridx = 8;
@@ -865,20 +826,17 @@ public class main{
                 state.setStateAb("ND");
                 state.clearCaseSeries();
                 state.clearDeathSeries();
-                for(int i = 1; i <= 115; i++) {
+                for (int i = 1; i <= 115; i++) {
                     if (i <= 28) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 200 + i + 1, "ND"));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 200 + i + 1, "ND"));
-                    }
-                    else if (i <= 59) {
+                    } else if (i <= 59) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 300 + i - 28, "ND"));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 300 + i - 28, "ND"));
-                    }
-                    else if(i <= 89){
+                    } else if (i <= 89) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 400 + i - 59, state.getStateAb()));
-                        state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 400 + i -59, state.getStateAb()));
-                    }
-                    else {
+                        state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 400 + i - 59, state.getStateAb()));
+                    } else {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 500 + i - 89, state.getStateAb()));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 500 + i - 89, state.getStateAb()));
                     }
@@ -887,7 +845,7 @@ public class main{
         });
         label.add(ND, gbc);
 
-        gbc.insets = new Insets(40,0,0,0);
+        gbc.insets = new Insets(40, 0, 0, 0);
 
         JButton SD = new JButton("SD");
         SD.setPreferredSize(new Dimension(30, 30));
@@ -903,20 +861,17 @@ public class main{
                 state.setStateAb("SD");
                 state.clearCaseSeries();
                 state.clearDeathSeries();
-                for(int i = 1; i <= 115; i++) {
+                for (int i = 1; i <= 115; i++) {
                     if (i <= 28) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 200 + i + 1, "SD"));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 200 + i + 1, "SD"));
-                    }
-                    else if (i <= 59) {
+                    } else if (i <= 59) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 300 + i - 28, "SD"));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 300 + i - 28, "SD"));
-                    }
-                    else if(i <= 89){
+                    } else if (i <= 89) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 400 + i - 59, state.getStateAb()));
-                        state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 400 + i -59, state.getStateAb()));
-                    }
-                    else {
+                        state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 400 + i - 59, state.getStateAb()));
+                    } else {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 500 + i - 89, state.getStateAb()));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 500 + i - 89, state.getStateAb()));
                     }
@@ -925,7 +880,7 @@ public class main{
         });
         label.add(SD, gbc);
 
-        gbc.insets = new Insets(0,0,0,0);
+        gbc.insets = new Insets(0, 0, 0, 0);
         gbc.anchor = GridBagConstraints.LINE_END;
 
         JButton NE = new JButton("NE");
@@ -942,20 +897,17 @@ public class main{
                 state.setStateAb("NE");
                 state.clearCaseSeries();
                 state.clearDeathSeries();
-                for(int i = 1; i <= 115; i++) {
+                for (int i = 1; i <= 115; i++) {
                     if (i <= 28) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 200 + i + 1, "NE"));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 200 + i + 1, "NE"));
-                    }
-                    else if (i <= 59) {
+                    } else if (i <= 59) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 300 + i - 28, "NE"));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 300 + i - 28, "NE"));
-                    }
-                    else if(i <= 89){
+                    } else if (i <= 89) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 400 + i - 59, state.getStateAb()));
-                        state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 400 + i -59, state.getStateAb()));
-                    }
-                    else {
+                        state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 400 + i - 59, state.getStateAb()));
+                    } else {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 500 + i - 89, state.getStateAb()));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 500 + i - 89, state.getStateAb()));
                     }
@@ -965,7 +917,7 @@ public class main{
         label.add(NE, gbc);
 
         gbc.anchor = GridBagConstraints.LINE_START;
-        gbc.insets = new Insets(30,0,0,0);
+        gbc.insets = new Insets(30, 0, 0, 0);
 
         JButton KS = new JButton("KS");
         KS.setPreferredSize(new Dimension(30, 30));
@@ -981,20 +933,17 @@ public class main{
                 state.setStateAb("KS");
                 state.clearCaseSeries();
                 state.clearDeathSeries();
-                for(int i = 1; i <= 115; i++) {
+                for (int i = 1; i <= 115; i++) {
                     if (i <= 28) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 200 + i + 1, "KS"));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 200 + i + 1, "KS"));
-                    }
-                    else if (i <= 59) {
+                    } else if (i <= 59) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 300 + i - 28, "KS"));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 300 + i - 28, "KS"));
-                    }
-                    else if(i <= 89){
+                    } else if (i <= 89) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 400 + i - 59, state.getStateAb()));
-                        state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 400 + i -59, state.getStateAb()));
-                    }
-                    else {
+                        state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 400 + i - 59, state.getStateAb()));
+                    } else {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 500 + i - 89, state.getStateAb()));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 500 + i - 89, state.getStateAb()));
                     }
@@ -1004,7 +953,7 @@ public class main{
         label.add(KS, gbc);
 
 
-        gbc.insets = new Insets(0,0,0,0);
+        gbc.insets = new Insets(0, 0, 0, 0);
         gbc.anchor = GridBagConstraints.LINE_END;
 
         JButton OK = new JButton("OK");
@@ -1021,20 +970,17 @@ public class main{
                 state.setStateAb("OK");
                 state.clearCaseSeries();
                 state.clearDeathSeries();
-                for(int i = 1; i <= 115; i++) {
+                for (int i = 1; i <= 115; i++) {
                     if (i <= 28) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 200 + i + 1, "OK"));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 200 + i + 1, "OK"));
-                    }
-                    else if (i <= 59) {
+                    } else if (i <= 59) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 300 + i - 28, "OK"));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 300 + i - 28, "OK"));
-                    }
-                    else if(i <= 89){
+                    } else if (i <= 89) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 400 + i - 59, state.getStateAb()));
-                        state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 400 + i -59, state.getStateAb()));
-                    }
-                    else {
+                        state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 400 + i - 59, state.getStateAb()));
+                    } else {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 500 + i - 89, state.getStateAb()));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 500 + i - 89, state.getStateAb()));
                     }
@@ -1057,20 +1003,17 @@ public class main{
                 state.setStateAb("TX");
                 state.clearCaseSeries();
                 state.clearDeathSeries();
-                for(int i = 1; i <= 115; i++) {
+                for (int i = 1; i <= 115; i++) {
                     if (i <= 28) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 200 + i + 1, "TX"));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 200 + i + 1, "TX"));
-                    }
-                    else if (i <= 59) {
+                    } else if (i <= 59) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 300 + i - 28, "TX"));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 300 + i - 28, "TX"));
-                    }
-                    else if(i <= 89){
+                    } else if (i <= 89) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 400 + i - 59, state.getStateAb()));
-                        state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 400 + i -59, state.getStateAb()));
-                    }
-                    else {
+                        state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 400 + i - 59, state.getStateAb()));
+                    } else {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 500 + i - 89, state.getStateAb()));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 500 + i - 89, state.getStateAb()));
                     }
@@ -1093,20 +1036,17 @@ public class main{
                 state.setStateAb("MT");
                 state.clearCaseSeries();
                 state.clearDeathSeries();
-                for(int i = 1; i <= 115; i++) {
+                for (int i = 1; i <= 115; i++) {
                     if (i <= 28) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 200 + i + 1, "MT"));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 200 + i + 1, "MT"));
-                    }
-                    else if (i <= 59) {
+                    } else if (i <= 59) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 300 + i - 28, "MT"));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 300 + i - 28, "MT"));
-                    }
-                    else if(i <= 89){
+                    } else if (i <= 89) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 400 + i - 59, state.getStateAb()));
-                        state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 400 + i -59, state.getStateAb()));
-                    }
-                    else {
+                        state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 400 + i - 59, state.getStateAb()));
+                    } else {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 500 + i - 89, state.getStateAb()));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 500 + i - 89, state.getStateAb()));
                     }
@@ -1130,20 +1070,17 @@ public class main{
                 state.setStateAb("WY");
                 state.clearCaseSeries();
                 state.clearDeathSeries();
-                for(int i = 1; i <= 115; i++) {
+                for (int i = 1; i <= 115; i++) {
                     if (i <= 28) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 200 + i + 1, "WY"));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 200 + i + 1, "WY"));
-                    }
-                    else if (i <= 59) {
+                    } else if (i <= 59) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 300 + i - 28, "WY"));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 300 + i - 28, "WY"));
-                    }
-                    else if(i <= 89){
+                    } else if (i <= 89) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 400 + i - 59, state.getStateAb()));
-                        state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 400 + i -59, state.getStateAb()));
-                    }
-                    else {
+                        state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 400 + i - 59, state.getStateAb()));
+                    } else {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 500 + i - 89, state.getStateAb()));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 500 + i - 89, state.getStateAb()));
                     }
@@ -1167,20 +1104,17 @@ public class main{
                 state.setStateAb("CO");
                 state.clearCaseSeries();
                 state.clearDeathSeries();
-                for(int i = 1; i <= 115; i++) {
+                for (int i = 1; i <= 115; i++) {
                     if (i <= 28) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 200 + i + 1, "CO"));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 200 + i + 1, "CO"));
-                    }
-                    else if (i <= 59) {
+                    } else if (i <= 59) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 300 + i - 28, "CO"));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 300 + i - 28, "CO"));
-                    }
-                    else if(i <= 89){
+                    } else if (i <= 89) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 400 + i - 59, state.getStateAb()));
-                        state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 400 + i -59, state.getStateAb()));
-                    }
-                    else {
+                        state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 400 + i - 59, state.getStateAb()));
+                    } else {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 500 + i - 89, state.getStateAb()));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 500 + i - 89, state.getStateAb()));
                     }
@@ -1205,20 +1139,17 @@ public class main{
                 state.setStateAb("NM");
                 state.clearCaseSeries();
                 state.clearDeathSeries();
-                for(int i = 1; i <= 115; i++) {
+                for (int i = 1; i <= 115; i++) {
                     if (i <= 28) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 200 + i + 1, "NM"));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 200 + i + 1, "NM"));
-                    }
-                    else if (i <= 59) {
+                    } else if (i <= 59) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 300 + i - 28, "NM"));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 300 + i - 28, "NM"));
-                    }
-                    else if(i <= 89){
+                    } else if (i <= 89) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 400 + i - 59, state.getStateAb()));
-                        state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 400 + i -59, state.getStateAb()));
-                    }
-                    else {
+                        state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 400 + i - 59, state.getStateAb()));
+                    } else {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 500 + i - 89, state.getStateAb()));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 500 + i - 89, state.getStateAb()));
                     }
@@ -1243,20 +1174,17 @@ public class main{
                 state.setStateAb("MN");
                 state.clearCaseSeries();
                 state.clearDeathSeries();
-                for(int i = 1; i <= 115; i++) {
+                for (int i = 1; i <= 115; i++) {
                     if (i <= 28) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 200 + i + 1, "MN"));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 200 + i + 1, "MN"));
-                    }
-                    else if (i <= 59) {
+                    } else if (i <= 59) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 300 + i - 28, "MN"));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 300 + i - 28, "MN"));
-                    }
-                    else if(i <= 89){
+                    } else if (i <= 89) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 400 + i - 59, state.getStateAb()));
-                        state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 400 + i -59, state.getStateAb()));
-                    }
-                    else {
+                        state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 400 + i - 59, state.getStateAb()));
+                    } else {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 500 + i - 89, state.getStateAb()));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 500 + i - 89, state.getStateAb()));
                     }
@@ -1281,20 +1209,17 @@ public class main{
                 state.setStateAb("IA");
                 state.clearCaseSeries();
                 state.clearDeathSeries();
-                for(int i = 1; i <= 115; i++) {
+                for (int i = 1; i <= 115; i++) {
                     if (i <= 28) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 200 + i + 1, "IA"));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 200 + i + 1, "IA"));
-                    }
-                    else if (i <= 59) {
+                    } else if (i <= 59) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 300 + i - 28, "IA"));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 300 + i - 28, "IA"));
-                    }
-                    else if(i <= 89){
+                    } else if (i <= 89) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 400 + i - 59, state.getStateAb()));
-                        state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 400 + i -59, state.getStateAb()));
-                    }
-                    else {
+                        state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 400 + i - 59, state.getStateAb()));
+                    } else {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 500 + i - 89, state.getStateAb()));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 500 + i - 89, state.getStateAb()));
                     }
@@ -1319,20 +1244,17 @@ public class main{
                 state.setStateAb("MO");
                 state.clearCaseSeries();
                 state.clearDeathSeries();
-                for(int i = 1; i <= 115; i++) {
+                for (int i = 1; i <= 115; i++) {
                     if (i <= 28) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 200 + i + 1, "MO"));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 200 + i + 1, "MO"));
-                    }
-                    else if (i <= 59) {
+                    } else if (i <= 59) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 300 + i - 28, "MO"));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 300 + i - 28, "MO"));
-                    }
-                    else if(i <= 89){
+                    } else if (i <= 89) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 400 + i - 59, state.getStateAb()));
-                        state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 400 + i -59, state.getStateAb()));
-                    }
-                    else {
+                        state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 400 + i - 59, state.getStateAb()));
+                    } else {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 500 + i - 89, state.getStateAb()));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 500 + i - 89, state.getStateAb()));
                     }
@@ -1356,20 +1278,17 @@ public class main{
                 state.setStateAb("AR");
                 state.clearCaseSeries();
                 state.clearDeathSeries();
-                for(int i = 1; i <= 115; i++) {
+                for (int i = 1; i <= 115; i++) {
                     if (i <= 28) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 200 + i + 1, "AR"));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 200 + i + 1, "AR"));
-                    }
-                    else if (i <= 59) {
+                    } else if (i <= 59) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 300 + i - 28, "AR"));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 300 + i - 28, "AR"));
-                    }
-                    else if(i <= 89){
+                    } else if (i <= 89) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 400 + i - 59, state.getStateAb()));
-                        state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 400 + i -59, state.getStateAb()));
-                    }
-                    else {
+                        state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 400 + i - 59, state.getStateAb()));
+                    } else {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 500 + i - 89, state.getStateAb()));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 500 + i - 89, state.getStateAb()));
                     }
@@ -1394,20 +1313,17 @@ public class main{
                 state.setStateAb("LA");
                 state.clearCaseSeries();
                 state.clearDeathSeries();
-                for(int i = 1; i <= 115; i++) {
+                for (int i = 1; i <= 115; i++) {
                     if (i <= 28) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 200 + i + 1, "LA"));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 200 + i + 1, "LA"));
-                    }
-                    else if (i <= 59) {
+                    } else if (i <= 59) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 300 + i - 28, "LA"));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 300 + i - 28, "LA"));
-                    }
-                    else if(i <= 89){
+                    } else if (i <= 89) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 400 + i - 59, state.getStateAb()));
-                        state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 400 + i -59, state.getStateAb()));
-                    }
-                    else {
+                        state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 400 + i - 59, state.getStateAb()));
+                    } else {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 500 + i - 89, state.getStateAb()));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 500 + i - 89, state.getStateAb()));
                     }
@@ -1431,20 +1347,17 @@ public class main{
                 state.setStateAb("AK");
                 state.clearCaseSeries();
                 state.clearDeathSeries();
-                for(int i = 1; i <= 115; i++) {
+                for (int i = 1; i <= 115; i++) {
                     if (i <= 28) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 200 + i + 1, "AK"));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 200 + i + 1, "AK"));
-                    }
-                    else if (i <= 59) {
+                    } else if (i <= 59) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 300 + i - 28, "AK"));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 300 + i - 28, "AK"));
-                    }
-                    else if(i <= 89){
+                    } else if (i <= 89) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 400 + i - 59, state.getStateAb()));
-                        state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 400 + i -59, state.getStateAb()));
-                    }
-                    else {
+                        state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 400 + i - 59, state.getStateAb()));
+                    } else {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 500 + i - 89, state.getStateAb()));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 500 + i - 89, state.getStateAb()));
                     }
@@ -1452,7 +1365,6 @@ public class main{
             }
         });
         label.add(AK, gbc);
-
 
 
         JButton HI = new JButton("HI");
@@ -1469,20 +1381,17 @@ public class main{
                 state.setStateAb("HI");
                 state.clearCaseSeries();
                 state.clearDeathSeries();
-                for(int i = 1; i <= 115; i++) {
+                for (int i = 1; i <= 115; i++) {
                     if (i <= 28) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 200 + i + 1, "HI"));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 200 + i + 1, "HI"));
-                    }
-                    else if (i <= 59) {
+                    } else if (i <= 59) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 300 + i - 28, "HI"));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 300 + i - 28, "HI"));
-                    }
-                    else if(i <= 89){
+                    } else if (i <= 89) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 400 + i - 59, state.getStateAb()));
-                        state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 400 + i -59, state.getStateAb()));
-                    }
-                    else {
+                        state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 400 + i - 59, state.getStateAb()));
+                    } else {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 500 + i - 89, state.getStateAb()));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 500 + i - 89, state.getStateAb()));
                     }
@@ -1490,7 +1399,6 @@ public class main{
             }
         });
         label.add(HI, gbc);
-
 
 
         gbc.anchor = GridBagConstraints.LAST_LINE_END;
@@ -1508,20 +1416,17 @@ public class main{
                 state.setStateAb("ID");
                 state.clearCaseSeries();
                 state.clearDeathSeries();
-                for(int i = 1; i <= 115; i++) {
+                for (int i = 1; i <= 115; i++) {
                     if (i <= 28) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 200 + i + 1, "ID"));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 200 + i + 1, "ID"));
-                    }
-                    else if (i <= 59) {
+                    } else if (i <= 59) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 300 + i - 28, "ID"));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 300 + i - 28, "ID"));
-                    }
-                    else if(i <= 89){
+                    } else if (i <= 89) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 400 + i - 59, state.getStateAb()));
-                        state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 400 + i -59, state.getStateAb()));
-                    }
-                    else {
+                        state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 400 + i - 59, state.getStateAb()));
+                    } else {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 500 + i - 89, state.getStateAb()));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 500 + i - 89, state.getStateAb()));
                     }
@@ -1546,20 +1451,17 @@ public class main{
                 state.setStateAb("NV");
                 state.clearCaseSeries();
                 state.clearDeathSeries();
-                for(int i = 1; i <= 115; i++) {
+                for (int i = 1; i <= 115; i++) {
                     if (i <= 28) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 200 + i + 1, "NV"));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 200 + i + 1, "NV"));
-                    }
-                    else if (i <= 59) {
+                    } else if (i <= 59) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 300 + i - 28, "NV"));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 300 + i - 28, "NV"));
-                    }
-                    else if(i <= 89){
+                    } else if (i <= 89) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 400 + i - 59, state.getStateAb()));
-                        state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 400 + i -59, state.getStateAb()));
-                    }
-                    else {
+                        state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 400 + i - 59, state.getStateAb()));
+                    } else {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 500 + i - 89, state.getStateAb()));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 500 + i - 89, state.getStateAb()));
                     }
@@ -1583,20 +1485,17 @@ public class main{
                 state.setStateAb("CA");
                 state.clearCaseSeries();
                 state.clearDeathSeries();
-                for(int i = 1; i <= 115; i++) {
+                for (int i = 1; i <= 115; i++) {
                     if (i <= 28) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 200 + i + 1, "CA"));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 200 + i + 1, "CA"));
-                    }
-                    else if (i <= 59) {
+                    } else if (i <= 59) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 300 + i - 28, "CA"));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 300 + i - 28, "CA"));
-                    }
-                    else if(i <= 89){
+                    } else if (i <= 89) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 400 + i - 59, state.getStateAb()));
-                        state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 400 + i -59, state.getStateAb()));
-                    }
-                    else {
+                        state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 400 + i - 59, state.getStateAb()));
+                    } else {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 500 + i - 89, state.getStateAb()));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 500 + i - 89, state.getStateAb()));
                     }
@@ -1620,20 +1519,17 @@ public class main{
                 state.setStateAb("OR");
                 state.clearCaseSeries();
                 state.clearDeathSeries();
-                for(int i = 1; i <= 115; i++) {
+                for (int i = 1; i <= 115; i++) {
                     if (i <= 28) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 200 + i + 1, "OR"));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 200 + i + 1, "OR"));
-                    }
-                    else if (i <= 59) {
+                    } else if (i <= 59) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 300 + i - 28, "OR"));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 300 + i - 28, "OR"));
-                    }
-                    else if(i <= 89){
+                    } else if (i <= 89) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 400 + i - 59, state.getStateAb()));
-                        state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 400 + i -59, state.getStateAb()));
-                    }
-                    else {
+                        state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 400 + i - 59, state.getStateAb()));
+                    } else {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 500 + i - 89, state.getStateAb()));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 500 + i - 89, state.getStateAb()));
                     }
@@ -1658,20 +1554,17 @@ public class main{
                 state.setStateAb("WA");
                 state.clearCaseSeries();
                 state.clearDeathSeries();
-                for(int i = 1; i <= 115; i++) {
+                for (int i = 1; i <= 115; i++) {
                     if (i <= 28) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 200 + i + 1, "WA"));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 200 + i + 1, "WA"));
-                    }
-                    else if (i <= 59) {
+                    } else if (i <= 59) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 300 + i - 28, "WA"));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 300 + i - 28, "WA"));
-                    }
-                    else if(i <= 89){
+                    } else if (i <= 89) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 400 + i - 59, state.getStateAb()));
-                        state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 400 + i -59, state.getStateAb()));
-                    }
-                    else {
+                        state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 400 + i - 59, state.getStateAb()));
+                    } else {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 500 + i - 89, state.getStateAb()));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 500 + i - 89, state.getStateAb()));
                     }
@@ -1696,20 +1589,17 @@ public class main{
                 state.setStateAb("UT");
                 state.clearCaseSeries();
                 state.clearDeathSeries();
-                for(int i = 1; i <= 115; i++) {
+                for (int i = 1; i <= 115; i++) {
                     if (i <= 28) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 200 + i + 1, "UT"));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 200 + i + 1, "UT"));
-                    }
-                    else if (i <= 59) {
+                    } else if (i <= 59) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 300 + i - 28, "UT"));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 300 + i - 28, "UT"));
-                    }
-                    else if(i <= 89){
+                    } else if (i <= 89) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 400 + i - 59, state.getStateAb()));
-                        state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 400 + i -59, state.getStateAb()));
-                    }
-                    else {
+                        state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 400 + i - 59, state.getStateAb()));
+                    } else {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 500 + i - 89, state.getStateAb()));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 500 + i - 89, state.getStateAb()));
                     }
@@ -1733,20 +1623,17 @@ public class main{
                 state.setStateAb("AZ");
                 state.clearCaseSeries();
                 state.clearDeathSeries();
-                for(int i = 1; i <= 115; i++) {
+                for (int i = 1; i <= 115; i++) {
                     if (i <= 28) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 200 + i + 1, "AZ"));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 200 + i + 1, "AZ"));
-                    }
-                    else if (i <= 59) {
+                    } else if (i <= 59) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 300 + i - 28, "AZ"));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 300 + i - 28, "AZ"));
-                    }
-                    else if(i <= 89){
+                    } else if (i <= 89) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 400 + i - 59, state.getStateAb()));
-                        state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 400 + i -59, state.getStateAb()));
-                    }
-                    else {
+                        state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 400 + i - 59, state.getStateAb()));
+                    } else {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 500 + i - 89, state.getStateAb()));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 500 + i - 89, state.getStateAb()));
                     }
@@ -1771,20 +1658,17 @@ public class main{
                 state.setStateAb("WI");
                 state.clearCaseSeries();
                 state.clearDeathSeries();
-                for(int i = 1; i <= 115; i++) {
+                for (int i = 1; i <= 115; i++) {
                     if (i <= 28) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 200 + i + 1, "WI"));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 200 + i + 1, "WI"));
-                    }
-                    else if (i <= 59) {
+                    } else if (i <= 59) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 300 + i - 28, "WI"));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 300 + i - 28, "WI"));
-                    }
-                    else if(i <= 89){
+                    } else if (i <= 89) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 400 + i - 59, state.getStateAb()));
-                        state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 400 + i -59, state.getStateAb()));
-                    }
-                    else {
+                        state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 400 + i - 59, state.getStateAb()));
+                    } else {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 500 + i - 89, state.getStateAb()));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 500 + i - 89, state.getStateAb()));
                     }
@@ -1809,20 +1693,17 @@ public class main{
                 state.setStateAb("IL");
                 state.clearCaseSeries();
                 state.clearDeathSeries();
-                for(int i = 1; i <= 115; i++) {
+                for (int i = 1; i <= 115; i++) {
                     if (i <= 28) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 200 + i + 1, "IL"));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 200 + i + 1, "IL"));
-                    }
-                    else if (i <= 59) {
+                    } else if (i <= 59) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 300 + i - 28, "IL"));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 300 + i - 28, "IL"));
-                    }
-                    else if(i <= 89){
+                    } else if (i <= 89) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 400 + i - 59, state.getStateAb()));
-                        state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 400 + i -59, state.getStateAb()));
-                    }
-                    else {
+                        state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 400 + i - 59, state.getStateAb()));
+                    } else {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 500 + i - 89, state.getStateAb()));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 500 + i - 89, state.getStateAb()));
                     }
@@ -1832,7 +1713,7 @@ public class main{
         label.add(IL, gbc);
 
 
-        gbc.insets = new Insets(0,40,0,0);
+        gbc.insets = new Insets(0, 40, 0, 0);
         gbc.anchor = GridBagConstraints.LAST_LINE_END;
         JButton IN = new JButton("IN");
         IN.setPreferredSize(new Dimension(30, 30));
@@ -1848,20 +1729,17 @@ public class main{
                 state.setStateAb("IN");
                 state.clearCaseSeries();
                 state.clearDeathSeries();
-                for(int i = 1; i <= 115; i++) {
+                for (int i = 1; i <= 115; i++) {
                     if (i <= 28) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 200 + i + 1, "IN"));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 200 + i + 1, "IN"));
-                    }
-                    else if (i <= 59) {
+                    } else if (i <= 59) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 300 + i - 28, "IN"));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 300 + i - 28, "IN"));
-                    }
-                    else if(i <= 89){
+                    } else if (i <= 89) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 400 + i - 59, state.getStateAb()));
-                        state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 400 + i -59, state.getStateAb()));
-                    }
-                    else {
+                        state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 400 + i - 59, state.getStateAb()));
+                    } else {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 500 + i - 89, state.getStateAb()));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 500 + i - 89, state.getStateAb()));
                     }
@@ -1872,7 +1750,7 @@ public class main{
 
 
         gbc.anchor = GridBagConstraints.LINE_START;
-        gbc.insets = new Insets(0,0,0,0);
+        gbc.insets = new Insets(0, 0, 0, 0);
         JButton OH = new JButton("OH");
         OH.setPreferredSize(new Dimension(30, 30));
         gbc.gridx = 15;
@@ -1887,20 +1765,17 @@ public class main{
                 state.setStateAb("OH");
                 state.clearCaseSeries();
                 state.clearDeathSeries();
-                for(int i = 1; i <= 115; i++) {
+                for (int i = 1; i <= 115; i++) {
                     if (i <= 28) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 200 + i + 1, "OH"));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 200 + i + 1, "OH"));
-                    }
-                    else if (i <= 59) {
+                    } else if (i <= 59) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 300 + i - 28, "OH"));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 300 + i - 28, "OH"));
-                    }
-                    else if(i <= 89){
+                    } else if (i <= 89) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 400 + i - 59, state.getStateAb()));
-                        state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 400 + i -59, state.getStateAb()));
-                    }
-                    else {
+                        state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 400 + i - 59, state.getStateAb()));
+                    } else {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 500 + i - 89, state.getStateAb()));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 500 + i - 89, state.getStateAb()));
                     }
@@ -1924,20 +1799,17 @@ public class main{
                 state.setStateAb("MI");
                 state.clearCaseSeries();
                 state.clearDeathSeries();
-                for(int i = 1; i <= 115; i++) {
+                for (int i = 1; i <= 115; i++) {
                     if (i <= 28) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 200 + i + 1, "MI"));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 200 + i + 1, "MI"));
-                    }
-                    else if (i <= 59) {
+                    } else if (i <= 59) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 300 + i - 28, "MI"));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 300 + i - 28, "MI"));
-                    }
-                    else if(i <= 89){
+                    } else if (i <= 89) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 400 + i - 59, state.getStateAb()));
-                        state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 400 + i -59, state.getStateAb()));
-                    }
-                    else {
+                        state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 400 + i - 59, state.getStateAb()));
+                    } else {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 500 + i - 89, state.getStateAb()));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 500 + i - 89, state.getStateAb()));
                     }
@@ -1945,7 +1817,6 @@ public class main{
             }
         });
         label.add(MI, gbc);
-
 
 
         gbc.anchor = GridBagConstraints.LINE_START;
@@ -1963,20 +1834,17 @@ public class main{
                 state.setStateAb("MS");
                 state.clearCaseSeries();
                 state.clearDeathSeries();
-                for(int i = 1; i <= 115; i++) {
+                for (int i = 1; i <= 115; i++) {
                     if (i <= 28) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 200 + i + 1, "MS"));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 200 + i + 1, "MS"));
-                    }
-                    else if (i <= 59) {
+                    } else if (i <= 59) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 300 + i - 28, "MS"));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 300 + i - 28, "MS"));
-                    }
-                    else if(i <= 89){
+                    } else if (i <= 89) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 400 + i - 59, state.getStateAb()));
-                        state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 400 + i -59, state.getStateAb()));
-                    }
-                    else {
+                        state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 400 + i - 59, state.getStateAb()));
+                    } else {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 500 + i - 89, state.getStateAb()));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 500 + i - 89, state.getStateAb()));
                     }
@@ -1985,7 +1853,7 @@ public class main{
         });
         label.add(MS, gbc);
 
-        gbc.insets = new Insets(0,50,0,0);
+        gbc.insets = new Insets(0, 50, 0, 0);
         gbc.anchor = GridBagConstraints.LINE_END;
         JButton AL = new JButton("AL");
         AL.setPreferredSize(new Dimension(30, 30));
@@ -2001,20 +1869,17 @@ public class main{
                 state.setStateAb("AL");
                 state.clearCaseSeries();
                 state.clearDeathSeries();
-                for(int i = 1; i <= 115; i++) {
+                for (int i = 1; i <= 115; i++) {
                     if (i <= 28) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 200 + i + 1, "AL"));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 200 + i + 1, "AL"));
-                    }
-                    else if (i <= 59) {
+                    } else if (i <= 59) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 300 + i - 28, "AL"));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 300 + i - 28, "AL"));
-                    }
-                    else if(i <= 89){
+                    } else if (i <= 89) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 400 + i - 59, state.getStateAb()));
-                        state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 400 + i -59, state.getStateAb()));
-                    }
-                    else {
+                        state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 400 + i - 59, state.getStateAb()));
+                    } else {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 500 + i - 89, state.getStateAb()));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 500 + i - 89, state.getStateAb()));
                     }
@@ -2024,7 +1889,7 @@ public class main{
         label.add(AL, gbc);
 
 
-        gbc.insets = new Insets(0,0,0,0);
+        gbc.insets = new Insets(0, 0, 0, 0);
         gbc.anchor = GridBagConstraints.PAGE_END;
         JButton GA = new JButton("GA");
         GA.setPreferredSize(new Dimension(30, 30));
@@ -2040,20 +1905,17 @@ public class main{
                 state.setStateAb("GA");
                 state.clearCaseSeries();
                 state.clearDeathSeries();
-                for(int i = 1; i <= 115; i++) {
+                for (int i = 1; i <= 115; i++) {
                     if (i <= 28) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 200 + i + 1, "GA"));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 200 + i + 1, "GA"));
-                    }
-                    else if (i <= 59) {
+                    } else if (i <= 59) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 300 + i - 28, "GA"));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 300 + i - 28, "GA"));
-                    }
-                    else if(i <= 89){
+                    } else if (i <= 89) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 400 + i - 59, state.getStateAb()));
-                        state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 400 + i -59, state.getStateAb()));
-                    }
-                    else {
+                        state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 400 + i - 59, state.getStateAb()));
+                    } else {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 500 + i - 89, state.getStateAb()));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 500 + i - 89, state.getStateAb()));
                     }
@@ -2061,7 +1923,6 @@ public class main{
             }
         });
         label.add(GA, gbc);
-
 
 
         JButton FL = new JButton("FL");
@@ -2078,20 +1939,17 @@ public class main{
                 state.setStateAb("FL");
                 state.clearCaseSeries();
                 state.clearDeathSeries();
-                for(int i = 1; i <= 115; i++) {
+                for (int i = 1; i <= 115; i++) {
                     if (i <= 28) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 200 + i + 1, "FL"));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 200 + i + 1, "FL"));
-                    }
-                    else if (i <= 59) {
+                    } else if (i <= 59) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 300 + i - 28, "FL"));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 300 + i - 28, "FL"));
-                    }
-                    else if(i <= 89){
+                    } else if (i <= 89) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 400 + i - 59, state.getStateAb()));
-                        state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 400 + i -59, state.getStateAb()));
-                    }
-                    else {
+                        state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 400 + i - 59, state.getStateAb()));
+                    } else {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 500 + i - 89, state.getStateAb()));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 500 + i - 89, state.getStateAb()));
                     }
@@ -2107,28 +1965,25 @@ public class main{
         gbc.gridy = 7;
         SC.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-            panel1.setVisible(false);
-            state.setVisible(true);
-            state.changeStateLabel("South Carolina");
+                panel1.setVisible(false);
+                state.setVisible(true);
+                state.changeStateLabel("South Carolina");
                 state.changeDeathLabel("Deaths: " + select.selectDeath(bigDate, "SC"));
                 state.changeCasesLabel("Cases: " + select.selectPositive(bigDate, "SC"));
                 state.setStateAb("SC");
                 state.clearCaseSeries();
                 state.clearDeathSeries();
-                for(int i = 1; i <= 115; i++) {
+                for (int i = 1; i <= 115; i++) {
                     if (i <= 28) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 200 + i + 1, "SC"));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 200 + i + 1, "SC"));
-                    }
-                    else if (i <= 59) {
+                    } else if (i <= 59) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 300 + i - 28, "SC"));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 300 + i - 28, "SC"));
-                    }
-                    else if(i <= 89){
+                    } else if (i <= 89) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 400 + i - 59, state.getStateAb()));
-                        state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 400 + i -59, state.getStateAb()));
-                    }
-                    else {
+                        state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 400 + i - 59, state.getStateAb()));
+                    } else {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 500 + i - 89, state.getStateAb()));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 500 + i - 89, state.getStateAb()));
                     }
@@ -2153,20 +2008,17 @@ public class main{
                 state.setStateAb("NC");
                 state.clearCaseSeries();
                 state.clearDeathSeries();
-                for(int i = 1; i <= 115; i++) {
+                for (int i = 1; i <= 115; i++) {
                     if (i <= 28) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 200 + i + 1, "NC"));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 200 + i + 1, "NC"));
-                    }
-                    else if (i <= 59) {
+                    } else if (i <= 59) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 300 + i - 28, "NC"));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 300 + i - 28, "NC"));
-                    }
-                    else if(i <= 89){
+                    } else if (i <= 89) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 400 + i - 59, state.getStateAb()));
-                        state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 400 + i -59, state.getStateAb()));
-                    }
-                    else {
+                        state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 400 + i - 59, state.getStateAb()));
+                    } else {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 500 + i - 89, state.getStateAb()));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 500 + i - 89, state.getStateAb()));
                     }
@@ -2190,20 +2042,17 @@ public class main{
                 state.setStateAb("VA");
                 state.clearCaseSeries();
                 state.clearDeathSeries();
-                for(int i = 1; i <= 115; i++) {
+                for (int i = 1; i <= 115; i++) {
                     if (i <= 28) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 200 + i + 1, "VA"));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 200 + i + 1, "VA"));
-                    }
-                    else if (i <= 59) {
+                    } else if (i <= 59) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 300 + i - 28, "VA"));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 300 + i - 28, "VA"));
-                    }
-                    else if(i <= 89){
+                    } else if (i <= 89) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 400 + i - 59, state.getStateAb()));
-                        state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 400 + i -59, state.getStateAb()));
-                    }
-                    else {
+                        state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 400 + i - 59, state.getStateAb()));
+                    } else {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 500 + i - 89, state.getStateAb()));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 500 + i - 89, state.getStateAb()));
                     }
@@ -2227,20 +2076,17 @@ public class main{
                 state.setStateAb("WV");
                 state.clearCaseSeries();
                 state.clearDeathSeries();
-                for(int i = 1; i <= 115; i++) {
+                for (int i = 1; i <= 115; i++) {
                     if (i <= 28) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 200 + i + 1, "WV"));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 200 + i + 1, "WV"));
-                    }
-                    else if (i <= 59) {
+                    } else if (i <= 59) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 300 + i - 28, "WV"));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 300 + i - 28, "WV"));
-                    }
-                    else if(i <= 89){
+                    } else if (i <= 89) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 400 + i - 59, state.getStateAb()));
-                        state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 400 + i -59, state.getStateAb()));
-                    }
-                    else {
+                        state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 400 + i - 59, state.getStateAb()));
+                    } else {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 500 + i - 89, state.getStateAb()));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 500 + i - 89, state.getStateAb()));
                     }
@@ -2251,7 +2097,7 @@ public class main{
 
 
         gbc.anchor = GridBagConstraints.LAST_LINE_START;
-        JButton KC = new JButton("KC");
+        JButton KC = new JButton("KY");
         KC.setPreferredSize(new Dimension(30, 30));
         gbc.gridx = 14;
         gbc.gridy = 5;
@@ -2260,25 +2106,22 @@ public class main{
                 panel1.setVisible(false);
                 state.setVisible(true);
                 state.changeStateLabel("Kentucky");
-                state.changeDeathLabel("Deaths: " + select.selectDeath(bigDate, "KC"));
-                state.changeCasesLabel("Cases: " + select.selectPositive(bigDate, "KC"));
-                state.setStateAb("KC");
+                state.changeDeathLabel("Deaths: " + select.selectDeath(bigDate, "KY"));
+                state.changeCasesLabel("Cases: " + select.selectPositive(bigDate, "KY"));
+                state.setStateAb("KY");
                 state.clearCaseSeries();
                 state.clearDeathSeries();
-                for(int i = 1; i <= 115; i++) {
+                for (int i = 1; i <= 115; i++) {
                     if (i <= 28) {
-                        state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 200 + i + 1, "KC"));
-                        state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 200 + i + 1, "KC"));
-                    }
-                    else if (i <= 59) {
-                        state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 300 + i - 28, "KC"));
-                        state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 300 + i - 28, "KC"));
-                    }
-                    else if(i <= 89){
+                        state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 200 + i + 1, "KY"));
+                        state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 200 + i + 1, "KY"));
+                    } else if (i <= 59) {
+                        state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 300 + i - 28, "KY"));
+                        state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 300 + i - 28, "KY"));
+                    } else if (i <= 89) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 400 + i - 59, state.getStateAb()));
-                        state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 400 + i -59, state.getStateAb()));
-                    }
-                    else {
+                        state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 400 + i - 59, state.getStateAb()));
+                    } else {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 500 + i - 89, state.getStateAb()));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 500 + i - 89, state.getStateAb()));
                     }
@@ -2286,7 +2129,6 @@ public class main{
             }
         });
         label.add(KC, gbc);
-
 
 
         JButton TN = new JButton("TN");
@@ -2303,20 +2145,17 @@ public class main{
                 state.setStateAb("TN");
                 state.clearCaseSeries();
                 state.clearDeathSeries();
-                for(int i = 1; i <= 115; i++) {
+                for (int i = 1; i <= 115; i++) {
                     if (i <= 28) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 200 + i + 1, "TN"));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 200 + i + 1, "TN"));
-                    }
-                    else if (i <= 59) {
+                    } else if (i <= 59) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 300 + i - 28, "TN"));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 300 + i - 28, "TN"));
-                    }
-                    else if(i <= 89){
+                    } else if (i <= 89) {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 400 + i - 59, state.getStateAb()));
-                        state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 400 + i -59, state.getStateAb()));
-                    }
-                    else {
+                        state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 400 + i - 59, state.getStateAb()));
+                    } else {
                         state.addtoCaseSeries(i - 1, select.selectPositive(20200000 + 500 + i - 89, state.getStateAb()));
                         state.addtoDeathSeries(i - 1, select.selectDeath(20200000 + 500 + i - 89, state.getStateAb()));
                     }
@@ -2324,7 +2163,6 @@ public class main{
             }
         });
         label.add(TN, gbc);
-
 
 
         JButton ZOOM = new JButton("ZOOM");
@@ -2376,17 +2214,17 @@ public class main{
         });
 
         JLabel title = new JLabel("Covid Tracker");
-        Font font = new Font("Courier", Font.BOLD,18);
+        Font font = new Font("Courier", Font.BOLD, 18);
         title.setFont(font);
         JLabel text1 = new JLabel("To look at our research");
         JLabel text2 = new JLabel("To be redirected to the main map");
         JLabel text3 = new JLabel("To look at case rankings");
-GridBagConstraints gbc2 = new GridBagConstraints();
+        GridBagConstraints gbc2 = new GridBagConstraints();
 
-        gbc2.insets = new Insets(0, 0, 200, 0 );
+        gbc2.insets = new Insets(0, 0, 200, 0);
         panel2.add(title, gbc2);
         gbc2.gridy = 1;
-        gbc2.insets = new Insets(0, 0, 0, 0 );
+        gbc2.insets = new Insets(0, 0, 0, 0);
         panel2.add(day, gbc2);
         gbc2.gridy = 2;
         panel2.add(slider, gbc2);
@@ -2402,7 +2240,6 @@ GridBagConstraints gbc2 = new GridBagConstraints();
         panel2.add(text3, gbc2);
         gbc2.gridy = 8;
         panel2.add(rankings, gbc2);
-
 
 
         panel1.add(label);
@@ -2423,66 +2260,63 @@ GridBagConstraints gbc2 = new GridBagConstraints();
         slider.addChangeListener(
                 new ChangeListener() {
                     public void stateChanged(ChangeEvent e) {
-                        if((((JSlider)e.getSource()).getValue() >= 0) && (((JSlider)e.getSource()).getValue() <= 28)) {
+                        if ((((JSlider) e.getSource()).getValue() >= 0) && (((JSlider) e.getSource()).getValue() <= 28)) {
                             bigDate = 20200000 + 200 + ((JSlider) e.getSource()).getValue() + 1;
                             day.setText("Feburary " + (((JSlider) e.getSource()).getValue() + 1) + " 2020");
                             state.changeDateLabel("Data for: Feburary " + (((JSlider) e.getSource()).getValue() + 1) + " 2020");
                         }
-                        if((((JSlider)e.getSource()).getValue() >= 29) && (((JSlider)e.getSource()).getValue() <= 59)) {
+                        if ((((JSlider) e.getSource()).getValue() >= 29) && (((JSlider) e.getSource()).getValue() <= 59)) {
                             bigDate = 20200000 + 300 + ((JSlider) e.getSource()).getValue() - 28;
                             day.setText("March " + (((JSlider) e.getSource()).getValue() - 28) + " 2020");
                             state.changeDateLabel("Data for: March " + (((JSlider) e.getSource()).getValue() - 28) + " 2020");
                         }
-                        if((((JSlider)e.getSource()).getValue() >= 60) && (((JSlider)e.getSource()).getValue() <= 89)) {
+                        if ((((JSlider) e.getSource()).getValue() >= 60) && (((JSlider) e.getSource()).getValue() <= 89)) {
                             bigDate = 20200000 + 400 + ((JSlider) e.getSource()).getValue() - 59;
                             day.setText("April " + (((JSlider) e.getSource()).getValue() - 59) + " 2020");
-                            state.changeDateLabel("Date for: April " + (((JSlider) e.getSource()).getValue() - 59) + " 2020");
+                            state.changeDateLabel("Data for: April " + (((JSlider) e.getSource()).getValue() - 59) + " 2020");
                         }
 
-                        if((((JSlider)e.getSource()).getValue() >= 90) && (((JSlider)e.getSource()).getValue() <= 115)) {
+                        if ((((JSlider) e.getSource()).getValue() >= 90) && (((JSlider) e.getSource()).getValue() <= 115)) {
                             bigDate = 20200000 + 500 + ((JSlider) e.getSource()).getValue() - 89;
                             day.setText("May " + (((JSlider) e.getSource()).getValue() - 89) + " 2020");
-                            state.changeDateLabel("Date for: May " + (((JSlider) e.getSource()).getValue() - 89) + " 2020");
+                            state.changeDateLabel("Data for: May " + (((JSlider) e.getSource()).getValue() - 89) + " 2020");
                         }
-                            state.changeDeathLabel("Deaths: " + select.selectDeath(bigDate, state.getStateAb()));
-                            state.changeCasesLabel("Cases: " + select.selectPositive(bigDate, state.getStateAb()));
-                            int[] array = getCasesArray(bigDate);
-                            sort(array, 0, array.length - 1);
-                            for(int i = 1; i < 51; i++) {
-                                if(i < 26) {
-                                    gbcRank.gridy = i - 1;
-                                    gbcRank.gridx = 0;
-                                    JLabel l = (JLabel)(rank.getComponent(i-1));
-                                    l.setText(i + ": " + map.get(array[array.length - i]).remove(0) + "(" + array[array.length - i] + ")");
-                                }
-                                else {
-                                    gbcRank.gridy = i - 26;
-                                    gbcRank.gridx = 2;
-                                    gbcRank.insets = new Insets(0, 50, 0, 0);
-                                    JLabel l = (JLabel)(rank.getComponent(i-1));
-                                    l.setText(i + ": " + map.get(array[array.length - i]).remove(0) + "(" + array[array.length - i] + ")");
-                                }
+                        state.changeDeathLabel("Deaths: " + select.selectDeath(bigDate, state.getStateAb()));
+                        state.changeCasesLabel("Cases: " + select.selectPositive(bigDate, state.getStateAb()));
+                        int[] array = getCasesArray(bigDate);
+                        sort(array, 0, array.length - 1);
+                        for (int i = 1; i < 51; i++) {
+                            if (i < 26) {
+                                gbcRank.gridy = i - 1;
+                                gbcRank.gridx = 0;
+                                JLabel l = (JLabel) (rank.getComponent(i-1));
+                                l.setText(i + ": " + map.get(array[array.length - i]).remove(0) + "(" + array[array.length - i] + ")");
+                            } else {
+                                gbcRank.gridy = i - 26;
+                                gbcRank.gridx = 2;
+                                gbcRank.insets = new Insets(0, 50, 0, 0);
+                                JLabel l = (JLabel) (rank.getComponent(i-1));
+                                l.setText(i + ": " + map.get(array[array.length - i]).remove(0) + "(" + array[array.length - i] + ")");
                             }
-                        JLabel l = (JLabel)(rank.getComponent(50));
-                        l.setText("Total Positive Cases: " + sum);
+                        }
+                        JLabel l = (JLabel) (rank.getComponent(50));
+                        l.setText("Total US States Positive Cases: " + sum);
 
                     }
                 });
 
     }
 
-    public static int[] getCasesArray(int a){
+    public static int[] getCasesArray(int a) {
         int[] array = new int[50];
         map = new TreeMap<Integer, ArrayList<String>>();
         sum = 0;
         for (int i = 0; i < stateArray.size(); i++) {
             array[i] = select.selectPositive(a, stateArray.get(i).substring(0, 2));
             sum += array[i];
-            if(map.containsKey(array[i]))
-            {
+            if (map.containsKey(array[i])) {
                 map.get(array[i]).add(stateArray.get(i).substring(5));
-            }
-            else {
+            } else {
                 ArrayList<String> temp = new ArrayList<String>();
                 temp.add(stateArray.get(i).substring(5));
                 map.put(array[i], temp);
@@ -2491,14 +2325,11 @@ GridBagConstraints gbc2 = new GridBagConstraints();
         return array;
     }
 
-  public static int partition(int arr[], int low, int high)
-    {
+    public static int partition(int arr[], int low, int high) {
         int pivot = arr[high];
-        int i = (low-1);
-        for (int j=low; j<high; j++)
-        {
-            if (arr[j] < pivot)
-            {
+        int i = (low - 1);
+        for (int j = low; j < high; j++) {
+            if (arr[j] < pivot) {
                 i++;
 
                 int temp = arr[i];
@@ -2507,24 +2338,21 @@ GridBagConstraints gbc2 = new GridBagConstraints();
             }
         }
 
-        int temp = arr[i+1];
-        arr[i+1] = arr[high];
+        int temp = arr[i + 1];
+        arr[i + 1] = arr[high];
         arr[high] = temp;
 
-        return i+1;
+        return i + 1;
     }
 
 
-
-    public static void sort(int arr[], int low, int high)
-    {
-        if (low < high)
-        {
+    public static void sort(int arr[], int low, int high) {
+        if (low < high) {
 
             int pi = partition(arr, low, high);
 
-            sort(arr, low, pi-1);
-            sort(arr, pi+1, high);
+            sort(arr, low, pi - 1);
+            sort(arr, pi + 1, high);
         }
     }
 
@@ -2549,5 +2377,5 @@ GridBagConstraints gbc2 = new GridBagConstraints();
       ImageIO.write(outputImage, formatName, new File(outputImagePath));
    }
    */
-
 }
+

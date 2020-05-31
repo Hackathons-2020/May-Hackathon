@@ -5,4 +5,5 @@ public class rankingsPanel extends JPanel {
         this.setPreferredSize(new Dimension(1050, 694));
         this.setLayout(new GridBagLayout());
     }
+
 }

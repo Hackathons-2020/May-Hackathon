@@ -34,6 +34,11 @@ public class statePanel extends JPanel{
          cases = new JLabel("Cases: 0");
          stateName = new JLabel("State");
          date = new JLabel("Data for: Feburary 1 2020");
+         Font font = new Font("Serif", Font.PLAIN, 25);
+         deaths.setFont(font);
+         cases.setFont(font);
+        stateName.setFont(font);
+        date.setFont(font);
          infoPanel.add(stateName);
          infoPanel.add(date);
          infoPanel.add(deaths);
