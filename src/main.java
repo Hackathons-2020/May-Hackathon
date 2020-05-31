@@ -2222,7 +2222,7 @@ public class main {
         JLabel description1 = new JLabel("Our Goal: To create an interactive");
         JLabel description2 = new JLabel("environment that increases awareness");
         JLabel description3 = new JLabel("about and helps slow the");
-        JLabel description4 = new JLabel("spread of the Covid-19.");
+        JLabel description4 = new JLabel("spread of the COVID-19.");
         GridBagConstraints gbc2 = new GridBagConstraints();
 
         panel2.add(title, gbc2);
