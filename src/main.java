@@ -2213,7 +2213,7 @@ public class main {
             }
         });
 
-        JLabel title = new JLabel("Covid Tracker");
+        JLabel title = new JLabel("COVID Tracker");
         Font font = new Font("Courier", Font.BOLD, 18);
         title.setFont(font);
         JLabel text1 = new JLabel("To look at our research");
