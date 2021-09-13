@@ -1,3 +1,5 @@
+# The COVID Tracker
+
 This is our submisssion to the Juni May Hackathon.
 If the project is not compiling make sure you have the following dependencies added in Intelij. 
 
